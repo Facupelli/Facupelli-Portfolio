@@ -22,7 +22,7 @@ import Wallpaper from "./Wallpaper";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
-export default function Works() {
+export default function Works({divRef}) {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
@@ -31,10 +31,8 @@ export default function Works() {
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
   const [seeMoreCognizant, setSeeMoreCognizant] = useState(false);
 
-  const divRef = useRef(null);
 
   const handleClickWorks = () => {
-    console.log(divRef);
     divRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
