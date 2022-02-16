@@ -70,7 +70,6 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
             <img
               className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
               objectfit="cover"
-              borderRadius="5px"
               src={home1}
               alt="landing"
             />

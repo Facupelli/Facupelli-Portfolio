@@ -70,7 +70,6 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
             <img
               className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
               objectfit="cover"
-              borderRadius="5px"
               src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png"
               alt="landing"
             />

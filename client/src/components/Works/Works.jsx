@@ -18,6 +18,7 @@ import Matters from "../MattersQuote";
 import { Alkemy } from "./Apps/Alkemy";
 import TodoApp from "./Apps/TodoApp";
 import { Cognizant } from "./Apps/Cognizant";
+import Wallpaper from "./Wallpaper";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
@@ -33,8 +34,8 @@ export default function Works() {
   const divRef = useRef(null);
 
   const handleClickWorks = () => {
-    console.log(divRef)
-    divRef.current.scrollIntoView({behavior: 'smooth'});
+    console.log(divRef);
+    divRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const dogImage =
@@ -77,13 +78,15 @@ export default function Works() {
         className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 "
         onClick={handleClickWorks}
       >
-        <h1 className="font-semibold text-4xl text-white cursor-pointer">Works</h1>
+        <h1 className="font-semibold text-4xl text-white cursor-pointer">
+          Works
+        </h1>
         <ArrowCircleDownIcon className="w-8 text-white cursor-pointer" />
       </div>
 
       {/* ----------------------------------- DOGS CARD ------------------------------------------ */}
       <Fade triggerOnce>
-        <div className="flex justify-center" >
+        <div className="flex justify-center">
           {!seeMoreDogs && (
             <div className={s.image}>
               <img className={s.image__img} src={dogImage} alt="dogs" />
@@ -167,10 +170,16 @@ export default function Works() {
         </div>
       )}
 
+      {/* ------------------------------------- QUOTTE ----------------------------------------------------- */}
+
+      <div className="mt-32 hidden md:block ">
+        <Wallpaper />
+      </div>
+
       {/* ----------------------------------- ALKEMY CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className="mt-24 flex justify-center">
+        <div className="mt-32 flex justify-center">
           {!seeMoreAlkemy && (
             <div className={s.image}>
               <img className={s.image__img} src={homeAlkemy} alt="chat_room" />
@@ -264,7 +273,7 @@ export default function Works() {
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
 
       <Fade triggerOnce>
-        <div className="mt-24 flex justify-center">
+        <div className="mt-24 flex justify-center md:pb-32">
           {!seeMoreChat && (
             <div className={s.image}>
               <img className={s.image__img} src={chat} alt="chat_room" />
@@ -299,9 +308,11 @@ export default function Works() {
       </div> */}
 
       {/* --------------------------             MATTERS QUOTE ------------------------------------------ */}
-      <Fade triggerOnce>
-        <Matters />
-      </Fade>
+      <div className="md:hidden block">
+        <Fade triggerOnce>
+          <Matters />
+        </Fade>
+      </div>
 
       <div>
         {/* <Dogs /> */}
