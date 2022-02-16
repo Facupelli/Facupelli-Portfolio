@@ -22,7 +22,7 @@ import Wallpaper from "./Wallpaper";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
-export default function Works({divRef, setLoadImage2}) {
+export default function Works({ divRef, setLoadImage2 }) {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
@@ -30,7 +30,6 @@ export default function Works({divRef, setLoadImage2}) {
   const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
   const [seeMoreCognizant, setSeeMoreCognizant] = useState(false);
-
 
   const handleClickWorks = () => {
     divRef.current.scrollIntoView({ behavior: "smooth" });
@@ -71,12 +70,12 @@ export default function Works({divRef, setLoadImage2}) {
   };
 
   return (
-    <div className="bg-gray-800" ref={divRef}>
+    <div className="bg-gray-900" ref={divRef}>
       <div
         className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 "
         onClick={handleClickWorks}
       >
-        <h1 className="font-semibold text-4xl text-white cursor-pointer">
+        <h1 className="font-semibold pb-2 text-4xl text-white cursor-pointer border-b-2 border-gray-900 transition ease-in-out duration-500 hover:border-cyan-200">
           Works
         </h1>
         <ArrowCircleDownIcon className="w-8 text-white cursor-pointer" />

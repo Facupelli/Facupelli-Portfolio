@@ -16,20 +16,33 @@ export default function AboutMe() {
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
           alt="landing"
         />
-        <p className="col-span-2 md:col-span-1 mr-auto  md:w-2/3 text-white">
-          Hello, my name is Facundo and I enjoy creating things since I was a
-          child. I used to create motion graphics for enterpise videos. Then,
-          while I was studying Industrial Design at Universidad Nacional de San
-          Juan I worked designing AutoCad plans for a metallurgical workshop. I
-          always loved technology and making things with the internet so I
-          decided to start learning web development at Henry Bootcamp. I am now
-          graduated and looking for my first opportunity to contribute on
-          challenging projects with everything I have learned and still learning
-          everyday. I am a very curious person, always willing to learn more. I
-          like challenges and solve problems. I don't like going to bed with
-          unfinished works, I don't like giving up. I am always looking forward
-          to improve, to learn from everybody and to share what I know.
-        </p>
+        <div>
+          <p className="col-span-2 md:col-span-1 mr-auto  md:w-2/3 text-white">
+            Hello, my name is Facundo and I enjoy creating things since I was a
+            child. I had always been passionate about technology and making
+            things with the internet so I decided to start learning web
+            development at Henry Bootcamp. I am now graduated and looking for my
+            first opportunity to contribute on challenging projects with
+            everything I have learned and still learning everyday. I am a very{" "}
+            <span className="font-bold border-b border-pink-400">curious</span>{" "}
+            person, always willing to{" "}
+            <span className="font-bold border-b border-pink-400">learn</span>{" "}
+            more. I like challenges and{" "}
+            <span className="font-bold border-b border-pink-400">solve</span>{" "}
+            problems. I don't like going to bed with unfinished works, I don't
+            like giving up. I am always looking forward to{" "}
+            <span className="font-bold border-b border-pink-400">improve</span>,
+            to learn from everybody and to{" "}
+            <span className="font-bold border-b border-pink-400">share</span>{" "}
+            what I know.
+          </p>
+          <p className="text-white mt-6">
+            <span className="text-cyan-200 font-bold">Contact me:</span>{" "}
+            <span className="font-semibold">
+              facundopellicer4@gmail.com
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );
