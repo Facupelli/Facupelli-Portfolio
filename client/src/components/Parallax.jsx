@@ -9,11 +9,16 @@ const image1 =
   background: "",
 };
 
-export default function ParallaxComponent() {
+export default function ParallaxComponent({setLoadImage1}) {
+
+  const handleLoad = () => {
+    setLoadImage1(false)
+  }
+
   return (
     <>
       <div className="hidden md:block">
-        <Parallax bgImage={image1} strength={-200}>
+        <Parallax bgImage={image1} strength={-200} onLoad={handleLoad}>
           <div style={{ height: 500 }}>
             <div style={insideStyles}>
               <Name />

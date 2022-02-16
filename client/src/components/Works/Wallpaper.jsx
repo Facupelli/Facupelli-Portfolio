@@ -10,11 +10,19 @@ const insideStyles = {
   background: "",
 };
 
-export default function Wallpaper() {
+
+
+
+export default function Wallpaper({setLoadImage2}) {
+
+  const handleLoad = () => {
+    setLoadImage2(false)
+  }
+
   return (
     <>
       <div className="hidden md:block shadow-inner ">
-        <Parallax bgImage={codeImage} strength={200}>
+        <Parallax bgImage={codeImage} strength={200} onLoad={handleLoad}>
           <div style={{ height: 370 }}>
             <div style={insideStyles} className="mt-16" >
                 <Matters />

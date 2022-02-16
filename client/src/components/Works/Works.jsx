@@ -22,7 +22,7 @@ import Wallpaper from "./Wallpaper";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
-export default function Works({divRef}) {
+export default function Works({divRef, setLoadImage2}) {
   const [seeMoreDogs, setSeeMoreDogs] = useState(false);
   const [seeMoreWeb, setSeeMoreWeb] = useState(false);
   const [seeMoreCuyo, setSeeMoreCuyo] = useState(false);
@@ -171,7 +171,7 @@ export default function Works({divRef}) {
       {/* ------------------------------------- QUOTTE ----------------------------------------------------- */}
 
       <div className="mt-32 hidden md:block ">
-        <Wallpaper />
+        <Wallpaper setLoadImage2={setLoadImage2} />
       </div>
 
       {/* ----------------------------------- ALKEMY CARD ------------------------------------------ */}
