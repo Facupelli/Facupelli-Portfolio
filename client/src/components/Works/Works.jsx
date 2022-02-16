@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
 import s from "./Works.module.css";
@@ -8,14 +8,14 @@ import chat from "../../Media/chatroom.png";
 import home from "../../Media/cuyobrewers/home.png";
 import homeAlkemy from "../../Media/alkemy/home.png";
 import homeTodo1 from "../../Media/todo/home1.png";
-import homeCognizant from '../../Media/cognizant/1.png'
+import homeCognizant from "../../Media/cognizant/1.png";
 
 //Components
 import Dogs from "./Apps/Dogs";
 import WebService from "./Apps/WebService";
 import CuyoBrewers from "./Apps/CuyoBrewers";
 import Matters from "../MattersQuote";
-import {Alkemy} from "./Apps/Alkemy";
+import { Alkemy } from "./Apps/Alkemy";
 import TodoApp from "./Apps/TodoApp";
 import { Cognizant } from "./Apps/Cognizant";
 
@@ -30,6 +30,12 @@ export default function Works() {
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
   const [seeMoreCognizant, setSeeMoreCognizant] = useState(false);
 
+  const divRef = useRef(null);
+
+  const handleClickWorks = () => {
+    console.log(divRef)
+    divRef.current.scrollIntoView({behavior: 'smooth'});
+  };
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -61,20 +67,23 @@ export default function Works() {
     setSeeMoreTodo(!seeMoreTodo);
   };
 
-  const handleOnClickCognizant = () =>{
-    setSeeMoreCognizant(!seeMoreCognizant)
-  }
-  
+  const handleOnClickCognizant = () => {
+    setSeeMoreCognizant(!seeMoreCognizant);
+  };
+
   return (
-    <div className="bg-gray-800">
-      <div className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16">
-        <h1 className="font-semibold text-4xl text-white">Works</h1>
-        <ArrowCircleDownIcon className="w-8 text-white" />
+    <div className="bg-gray-800" ref={divRef}>
+      <div
+        className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 "
+        onClick={handleClickWorks}
+      >
+        <h1 className="font-semibold text-4xl text-white cursor-pointer">Works</h1>
+        <ArrowCircleDownIcon className="w-8 text-white cursor-pointer" />
       </div>
 
       {/* ----------------------------------- DOGS CARD ------------------------------------------ */}
       <Fade triggerOnce>
-        <div className="flex justify-center">
+        <div className="flex justify-center" >
           {!seeMoreDogs && (
             <div className={s.image}>
               <img className={s.image__img} src={dogImage} alt="dogs" />
@@ -223,7 +232,11 @@ export default function Works() {
         <div className="mt-24 flex justify-center">
           {!seeMoreCognizant && (
             <div className={s.image}>
-              <img className={s.image__img} src={homeCognizant} alt="chat_room" />
+              <img
+                className={s.image__img}
+                src={homeCognizant}
+                alt="chat_room"
+              />
               <div className={s.image__overlay}>
                 <button onClick={handleOnClickCognizant}>
                   <div className={s.image__title}>
@@ -241,7 +254,10 @@ export default function Works() {
 
       {seeMoreCognizant && (
         <div className="">
-          <Cognizant setSeeMoreCognizant={setSeeMoreCognizant} seeMoreCognizant={seeMoreCognizant} />
+          <Cognizant
+            setSeeMoreCognizant={setSeeMoreCognizant}
+            seeMoreCognizant={seeMoreCognizant}
+          />
         </div>
       )}
 

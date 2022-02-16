@@ -1,17 +1,17 @@
 import React from "react";
-import {InformationCircleIcon} from "@heroicons/react/solid";
+import { InformationCircleIcon } from "@heroicons/react/solid";
 
 export default function AboutMe() {
   return (
-    <div className="md:pt-0 pb-16 pt-16 bg-gray-900">
-      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-28 md:py-16">
+    <div className="md:pt-0 pb-24 pt-16 bg-gray-900   ">
+      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-28 md:py-16 ">
         <p className="font-semibold text-4xl text-white ">About Me</p>
-        <InformationCircleIcon className="w-8 text-white"/>
+        <InformationCircleIcon className="w-8 text-white" />
       </div>
 
       <div className="grid grid-cols-2 gap-12 place-items-center px-6 md:px-0 md:text-left place-self-end ">
         <img
-          className="col-span-2 md:col-span-1 md:ml-auto  w-3/4 md:w-1/2 shadow-worksImagesRight rounded-lg"
+          className="col-span-2 md:col-span-1 md:ml-auto  w-3/4 md:w-1/2 shadow-worksImagesRight rounded-lg transition ease-in-out duration-500 hover:shadow-worksImagesLeft"
           objectfit="cover"
           src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
           alt="landing"
@@ -25,7 +25,10 @@ export default function AboutMe() {
           decided to start learning web development at Henry Bootcamp. I am now
           graduated and looking for my first opportunity to contribute on
           challenging projects with everything I have learned and still learning
-          everyday.
+          everyday. I am a very curious person, always willing to learn more. I
+          like challenges and solve problems. I don't like going to bed with
+          unfinished works, I don't like giving up. I am always looking forward
+          to improve, to learn from everybody and to share what I know.
         </p>
       </div>
     </div>
