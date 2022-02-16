@@ -8,6 +8,7 @@ import chat from "../../Media/chatroom.png";
 import home from "../../Media/cuyobrewers/home.png";
 import homeAlkemy from "../../Media/alkemy/home.png";
 import homeTodo1 from "../../Media/todo/home1.png";
+import homeCognizant from '../../Media/cognizant/1.png'
 
 //Components
 import Dogs from "./Apps/Dogs";
@@ -16,6 +17,7 @@ import CuyoBrewers from "./Apps/CuyoBrewers";
 import Matters from "../MattersQuote";
 import {Alkemy} from "./Apps/Alkemy";
 import TodoApp from "./Apps/TodoApp";
+import { Cognizant } from "./Apps/Cognizant";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
@@ -26,6 +28,8 @@ export default function Works() {
   const [seeMoreChat, setSeeMoreChat] = useState(false);
   const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
+  const [seeMoreCognizant, setSeeMoreCognizant] = useState(false);
+
 
   const dogImage =
     "https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637709264/landing_pidogs_vqevm5.png";
@@ -57,6 +61,10 @@ export default function Works() {
     setSeeMoreTodo(!seeMoreTodo);
   };
 
+  const handleOnClickCognizant = () =>{
+    setSeeMoreCognizant(!seeMoreCognizant)
+  }
+  
   return (
     <div className="bg-gray-800">
       <div className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16">
@@ -206,6 +214,34 @@ export default function Works() {
       {seeMoreTodo && (
         <div className="">
           <TodoApp setSeeMoreTodo={setSeeMoreTodo} seeMoreTodo={seeMoreTodo} />
+        </div>
+      )}
+
+      {/* ----------------------------------- COGNIZANT CHALLENGE CARD ------------------------------------------ */}
+
+      <Fade triggerOnce>
+        <div className="mt-24 flex justify-center">
+          {!seeMoreCognizant && (
+            <div className={s.image}>
+              <img className={s.image__img} src={homeCognizant} alt="chat_room" />
+              <div className={s.image__overlay}>
+                <button onClick={handleOnClickCognizant}>
+                  <div className={s.image__title}>
+                    <div>SEE MORE</div>
+                    <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      </Fade>
+
+      {/* ----------------------------------- COGNIZANT CHALLENGE DESPLIEGUE ------------------------------------------ */}
+
+      {seeMoreCognizant && (
+        <div className="">
+          <Cognizant setSeeMoreCognizant={setSeeMoreCognizant} seeMoreCognizant={seeMoreCognizant} />
         </div>
       )}
 
