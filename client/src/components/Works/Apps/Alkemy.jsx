@@ -75,7 +75,7 @@ export const Alkemy = ({ setSeeMoreAlkemy, seeMoreAlkemy }) => {
       <div className="col-span-2 md:col-span-1" align="right">
         <Slide duration={1500} triggerOnce>
           <img
-            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
+            className="shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src={search}
             alt="landing"
