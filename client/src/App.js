@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Works from "./components/Works/Works";
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
+import ParallaxComponent from "./components/Parallax";
+import { Fade } from "react-awesome-reveal";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <ParallaxComponent />
+      <Works />
+      <Fade duration={1500} triggerOnce>
+        <AboutMe />
+      </Fade>
+      <Footer />
     </div>
   );
 }
