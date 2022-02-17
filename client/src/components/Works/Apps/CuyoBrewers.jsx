@@ -2,9 +2,9 @@ import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
 import { MarkGithubIcon } from "@primer/octicons-react";
-import detail from '../../../Media/cuyobrewers/detail.png'
-import form from '../../../Media/cuyobrewers/form.png'
-import home from '../../../Media/cuyobrewers/home.png'
+import detail from '../../../Media/cuyobrewers/newDetail.png'
+import form from '../../../Media/cuyobrewers/newFrom.png'
+import home from '../../../Media/cuyobrewers/newHome.png'
 
 
 export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {

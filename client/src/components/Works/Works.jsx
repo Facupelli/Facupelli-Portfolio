@@ -5,7 +5,7 @@ import s from "./Works.module.css";
 
 //Media
 import chat from "../../Media/chatroom.png";
-import home from "../../Media/cuyobrewers/home.png";
+import home from "../../Media/cuyobrewers/newHome.png";
 import homeAlkemy from "../../Media/alkemy/home.png";
 import homeTodo1 from "../../Media/todo/home1.png";
 import homeCognizant from "../../Media/cognizant/1.png";
