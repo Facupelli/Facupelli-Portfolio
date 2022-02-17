@@ -18,6 +18,10 @@ module.exports = {
       pink: colors.pink,
     },
     extend: {
+      animation: {
+        "bounce-slow": "bounce 2s ease-in-out infinite",
+        "pulse-slow": "pulse 2s ease-in-out infinite",
+      },
       height: {
         parallaxLG: "500px",
       },
@@ -37,7 +41,8 @@ module.exports = {
         worksImagesRight:
           "7px -7px 0 -3px #1f2937, 7px -7px #9decf9, 14px -14px 0 -3px #1f2937, 14px -14px #ed64a6",
         quotes: "3px 3px #67e8f9, 6px 6px #1f2937, 9px 9px #ed64a6",
-        quotesHover: "-5px -5px #ed64a6, -10px -10px #1f2937, -15px -15px #67e8f9, 5px 5px #ed64a6, 10px 10px #1f2937, 15px 15px #67e8f9",
+        quotesHover:
+          "-5px -5px #ed64a6, -10px -10px #1f2937, -15px -15px #67e8f9, 5px 5px #ed64a6, 10px 10px #1f2937, 15px 15px #67e8f9",
       },
       backgroundImage: {
         intro: "url('/src/imgs/mountain2.jpg')",

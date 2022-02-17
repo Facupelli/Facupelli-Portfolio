@@ -27,7 +27,7 @@ export const Alkemy = ({ setSeeMoreAlkemy, seeMoreAlkemy }) => {
             target="_blank"
             rel="noreferrer"
           > */}
-            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100" />
+            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
           {/* </a> */}
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
           <a

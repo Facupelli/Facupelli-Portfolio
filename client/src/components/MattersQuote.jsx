@@ -8,7 +8,7 @@ export default function Matters() {
         <p className="text-white  font-semibold tracking-wider md:text-3xl font-title">
           Do what you love. Love what you do.
         </p>
-        <HeartIcon className="h-16 md:h-10 md:w-10 text-cyan-300" />
+        <HeartIcon className="h-16 md:h-10 md:w-10 text-cyan-300 animate-pulse-slow hover:animate-none" />
       </div>
     </div>
   );

@@ -31,8 +31,11 @@ export default function Works({ divRef, setLoadImage2 }) {
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
   const [seeMoreCognizant, setSeeMoreCognizant] = useState(false);
 
+  const [clickWorks, setClickWorks] = useState(false);
+
   const handleClickWorks = () => {
     divRef.current.scrollIntoView({ behavior: "smooth" });
+    setClickWorks(true);
   };
 
   const dogImage =
@@ -78,7 +81,11 @@ export default function Works({ divRef, setLoadImage2 }) {
         <h1 className="font-semibold pb-2 text-4xl text-white cursor-pointer border-b-2 border-gray-900 transition ease-in-out duration-500 hover:border-cyan-200">
           Works
         </h1>
-        <ArrowCircleDownIcon className="w-8 text-white cursor-pointer" />
+        <ArrowCircleDownIcon
+          className={`w-8 text-white cursor-pointer ${
+            clickWorks ? "" : "animate-bounce-slow"
+          } `}
+        />
       </div>
 
       {/* ----------------------------------- DOGS CARD ------------------------------------------ */}
