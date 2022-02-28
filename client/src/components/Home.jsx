@@ -6,15 +6,12 @@ import ParallaxComponent from "./Parallax";
 import { Fade } from "react-awesome-reveal";
 
 export const Home = () => {
-
   const divRef = useRef(null);
 
-  const [loadImage1, setLoadImage1] = useState(true)
-  const [loadImage2, setLoadImage2] = useState(true)
+  const [loadImage1, setLoadImage1] = useState(true);
+  const [loadImage2, setLoadImage2] = useState(true);
 
-  console.log(loadImage1, loadImage2)
-
-
+  console.log(loadImage1, loadImage2);
 
   return (
     <div>
