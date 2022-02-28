@@ -28,7 +28,7 @@ export default function AboutMe() {
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
             alt="landing"
           />
-          <div className="col-span-2 md:col-span-1 md:mr-auto md:w-2/3 mx-5 md:mx-0 text-white leading-relaxed">
+          <div className="col-span-2 md:col-span-1 md:mr-auto md:w-1/2 mx-5 md:mx-0 text-white leading-relaxed">
             <p >
               Hello, my name is Facundo and I enjoy creating things since I was
               a child. I had always been passionate about technology and making
@@ -58,17 +58,17 @@ export default function AboutMe() {
             </p> */}
           </div>
 
-          <div className="col-span-2 md:col-span-1 ml-auto w-3/4 md:w-1/2 mt-10">
+          <div className="col-span-2 md:col-span-2  w-3/4 md:w-1/2 mt-10">
             <button onClick={handleContactMe} className="transition ease-in-out duration-500 bg-pink-400 rounded p-2 font-semibold text-white w-full hover:bg-gray-900 hover:shadow-quotesHover tracking-wide">
               CONTACT ME!
             </button>
           </div>
-          <div className="hidden md:block md:col-span-1 mr-auto w-3/4 md:w-1/2 mt-10">
+          {/* <div className="hidden md:block md:col-span-1 mr-auto w-3/4 md:w-1/2 mt-10">
             <p className="text-white mt-6 ">
               <span className="text-cyan-200 font-bold">My Email:</span>{" "}
               <span className="font-semibold">facundopellicer4@gmail.com</span>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
