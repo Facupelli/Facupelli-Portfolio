@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-import apiKey from "../utils/emailjs";
+// import apiKey from "../utils/emailjs";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 emailjs.init(process.env.REACT_APP_USER_ID || apiKey.USER_ID);
@@ -20,7 +20,6 @@ export const ContactMe = ({ setModal }) => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
