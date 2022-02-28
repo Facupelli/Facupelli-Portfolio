@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { InformationCircleIcon } from "@heroicons/react/solid";
 import {ContactMe} from './ContactMe'
+import yoPic from '../Media/yo.jpg'
 
 export default function AboutMe() {
   const [modal, setModal] = useState(false)
@@ -25,7 +26,7 @@ export default function AboutMe() {
           <img
             className="col-span-2 md:col-span-1 md:ml-auto  w-3/4 md:w-1/2 shadow-worksImagesRight rounded-lg transition ease-in-out duration-500 hover:shadow-worksImagesLeft"
             objectfit="cover"
-            src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637793310/foto1-min_opt_obfq5t.png"
+            src={yoPic}
             alt="landing"
           />
           <div className="col-span-2 md:col-span-1 md:mr-auto md:w-1/2 mx-5 md:mx-0 text-white leading-relaxed">
