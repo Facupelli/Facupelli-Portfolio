@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { InformationCircleIcon } from "@heroicons/react/solid";
 import {ContactMe} from './ContactMe'
-import yoPic from '../Media/yo.jpg'
+import yoPic from '../Media/yo.png'
 
 export default function AboutMe() {
   const [modal, setModal] = useState(false)
