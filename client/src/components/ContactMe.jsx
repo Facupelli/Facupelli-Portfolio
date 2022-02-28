@@ -26,9 +26,11 @@ export const ContactMe = ({ setModal }) => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data,e) => {
     try {
       console.log(data);
+
+      e.preventDefault()
 
       emailjs
         .send(
