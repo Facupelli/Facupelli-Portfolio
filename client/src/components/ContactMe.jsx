@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import apiKey from "../utils/emailjs";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-emailjs.init(apiKey.USER_ID);
+emailjs.init(process.env.REACT_APP_USER_ID || apiKey.USER_ID);
 
 const schema = yup.object().shape({
   name: yup.string().required().min(2),
@@ -30,20 +30,26 @@ export const ContactMe = ({ setModal }) => {
     try {
       console.log(data);
 
-      emailjs.send(apiKey.SERVICE_ID, apiKey.TEMPLATE_ID, data).then(
-        (response) => {
-          console.log(
-            "Mail Sent! I will contact you soon.",
-            response.status,
-            response.text
-          );
-          alert("Mail Sent! I will contact you soon.");
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          alert("Error, pleas try again.", error);
-        }
-      );
+      emailjs
+        .send(
+          process.env.REACT_APP_SERVICE_ID || apiKey.SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID || apiKey.TEMPLATE_ID,
+          data
+        )
+        .then(
+          (response) => {
+            console.log(
+              "Mail Sent! I will contact you soon.",
+              response.status,
+              response.text
+            );
+            alert("Mail Sent! I will contact you soon.");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+            alert("Error, pleas try again.", error);
+          }
+        );
 
       setModal(false);
       document.body.style.overflow = "unset";
