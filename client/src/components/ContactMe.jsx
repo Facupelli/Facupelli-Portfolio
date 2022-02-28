@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 // import apiKey from "../utils/emailjs";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-emailjs.init(process.env.REACT_APP_USER_ID || apiKey.USER_ID);
+emailjs.init(process.env.REACT_APP_USER_ID );
 
 const schema = yup.object().shape({
   name: yup.string().required().min(2),
@@ -33,8 +33,8 @@ export const ContactMe = ({ setModal }) => {
 
       emailjs
         .send(
-          process.env.REACT_APP_SERVICE_ID || apiKey.SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID || apiKey.TEMPLATE_ID,
+          process.env.REACT_APP_SERVICE_ID ,
+          process.env.REACT_APP_TEMPLATE_ID ,
           data
         )
         .then(
