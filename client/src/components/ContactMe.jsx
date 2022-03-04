@@ -48,7 +48,7 @@ export const ContactMe = () => {
           },
           (error) => {
             console.log("FAILED...", error);
-            alert("Error, pleas try again.", error);
+            alert("Error, please try again.", error);
           }
         );
 
