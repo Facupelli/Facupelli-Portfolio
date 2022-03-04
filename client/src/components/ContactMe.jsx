@@ -15,10 +15,11 @@ const schema = yup.object().shape({
   message: yup.string().required().min(2).max(50),
 });
 
-export const ContactMe = ({ setModal }) => {
+export const ContactMe = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -51,8 +52,7 @@ export const ContactMe = ({ setModal }) => {
           }
         );
 
-      setModal(false);
-      document.body.style.overflow = "unset";
+      reset();
     } catch (e) {
       console.log({ onSubmitError: e });
     }
