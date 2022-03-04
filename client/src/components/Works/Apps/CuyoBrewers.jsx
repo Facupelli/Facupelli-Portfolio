@@ -46,7 +46,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
       <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
-        <Slide duration={1500} triggerOnce>
+        <Slide duration={2000} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
               This project is like a "social-network" for beer homebrewers.
@@ -58,7 +58,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
       </div>
 
       <div className="col-span-2 md:col-span-1" align="left">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <img
             className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
@@ -70,7 +70,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
 
       {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
       <div className="col-span-2 md:col-span-1" align="right">
-        <Slide duration={1500} triggerOnce>
+        <Slide duration={2000} triggerOnce>
           <img
             className="shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
@@ -81,7 +81,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
       </div>
 
       <div className="col-span-2 md:col-span-1 mt-auto mb-auto">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
               The technologies I used for this project were React, Redux with
@@ -95,7 +95,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
 
       {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
       <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
-        <Slide duration={1500} triggerOnce>
+        <Slide duration={2000} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
               In the app you can post a recipe, where the OG, FG, ABV and SRM
@@ -108,7 +108,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
       </div>
 
       <div className="col-span-2 md:col-span-1" align="cenleftter">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <img
             className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"

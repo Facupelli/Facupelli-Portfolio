@@ -3,7 +3,7 @@ import Works from "./Works/Works";
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
 import ParallaxComponent from "./Parallax";
-import { Fade } from "react-awesome-reveal";
+import { ContactMe } from "./ContactMe";
 
 export const Home = () => {
   const divRef = useRef(null);
@@ -17,9 +17,8 @@ export const Home = () => {
     <div>
       <ParallaxComponent setLoadImage1={setLoadImage1} />
       <Works divRef={divRef} setLoadImage2={setLoadImage2} />
-      <Fade duration={1500} triggerOnce>
-        <AboutMe />
-      </Fade>
+      <AboutMe />
+      <ContactMe />
       <Footer divRef={divRef} />
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Name() {
   return (
-    <div className="pl-12 pt-8 md:pl-28 md:pt-20">
+    <div className="pl-12 pt-8 md:pl-28 md:pt-20 ">
       <div>
         <h6 className="text-sm font-body">Hi, my name is</h6>
         <h2 className="font-semibold text-5xl font-title">Facundo Pellicer.</h2>

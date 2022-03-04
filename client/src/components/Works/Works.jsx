@@ -368,7 +368,7 @@ export default function Works({ divRef, setLoadImage2 }) {
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
 
       <div className="grid grid-cols-3 gap-x-12 items-center  ">
-        {!seeMoreCognizant && (
+        {!seeMoreChat && (
           <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white  text-center">
             <div className="">
               <p className="text-3xl">CHAT ROOM APP</p>

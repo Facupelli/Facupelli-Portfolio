@@ -53,7 +53,7 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
       <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
-        <Slide duration={1500} triggerOnce>
+        <Slide duration={2000} triggerOnce>
           <div className="px-8 md:p-8 ">
             <p className="md:w-3/4 text-white font-body">
               This project is a Todo app, where you can add and remove folders,
@@ -65,7 +65,7 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
       </div>
 
       <div className="col-span-2 md:col-span-1 md:text-left">
-        <Slide triggerOnce>
+        <Slide duration={1500} triggerOnce>
           <div>
             <img
               className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
@@ -79,7 +79,7 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
 
       {/* ------------------------------------- SEGUNDO PARRAFO --------------------------------------------- */}
       <div align="right" className="col-span-2 md:col-span-1">
-        <Slide duration={1500} triggerOnce>
+        <Slide duration={2000} triggerOnce>
           <div>
             <img
               className="shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
@@ -92,7 +92,7 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
       </div>
 
       <div className="col-span-2 md:col-span-1 mt-auto mb-auto" align="left">
-        <Slide triggerOnce>
+        <Slide uration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
               The technologies I used for this project were React, react-hook-form and tailwind-css
