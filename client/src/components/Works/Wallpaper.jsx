@@ -3,15 +3,12 @@ import { Parallax } from "react-parallax";
 import MattersQuote from "../MattersQuote";
 import codeImage from '../../imgs/codeWallpaper4.png'
 
-const image1 =
-  "https://images.hdqwalls.com/wallpapers/progamming-code-4k-nt.jpg";
+// const image1 =
+//   "https://images.hdqwalls.com/wallpapers/progamming-code-4k-nt.jpg";
 
 const insideStyles = {
   background: "",
 };
-
-
-
 
 export default function Wallpaper({setLoadImage2}) {
 
