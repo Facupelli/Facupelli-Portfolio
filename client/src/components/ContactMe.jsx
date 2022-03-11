@@ -59,13 +59,13 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="bg-gray-900 pt-16">
+    <div className="bg-gray-900 pt-16 ">
       <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-28 md:py-16 ">
         <p className="font-semibold text-4xl text-white ">Contact Me</p>
         <MailIcon className="w-8 text-white" />
       </div>
       <Fade duration={2500} triggerOnce>
-        <div className="flex justify-center  pb-24">
+        <div className="flex justify-center pb-16 mx-8 md:mx-0">
           <div className=" rounded-lg shadow-modalShadow md:w-3/4">
             <div className="text-white bg-gray-900 rounded-lg px-2 md:px-8 py-6 md:py-12 border-b-2 border-r-4 border-gray-800">
               <form onSubmit={handleSubmit(onSubmit)}>

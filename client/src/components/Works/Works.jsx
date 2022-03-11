@@ -73,7 +73,7 @@ export default function Works({ divRef, setLoadImage2 }) {
   };
 
   return (
-    <div className="bg-gray-900" ref={divRef}>
+    <div className="bg-gray-900 pb-16" ref={divRef}>
       <div
         className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 "
         onClick={handleClickWorks}
@@ -378,7 +378,7 @@ export default function Works({ divRef, setLoadImage2 }) {
         )}
         <div className="col-span-3 md:col-span-2">
           <Fade triggerOnce>
-            <div className="mt-24 flex justify-center md:justify-start md:pb-32">
+            <div className="mt-24 flex justify-center md:justify-start">
               {!seeMoreChat && (
                 <div className={s.image}>
                   <img className={s.image__img} src={chat} alt="chat_room" />

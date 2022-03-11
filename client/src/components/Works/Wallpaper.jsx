@@ -1,6 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import Matters from "../MattersQuote";
+import MattersQuote from "../MattersQuote";
 import codeImage from '../../imgs/codeWallpaper4.png'
 
 const image1 =
@@ -25,7 +25,7 @@ export default function Wallpaper({setLoadImage2}) {
         <Parallax bgImage={codeImage} strength={200} onLoad={handleLoad}>
           <div style={{ height: 370 }}>
             <div style={insideStyles} className="mt-16" >
-                <Matters />
+                <MattersQuote />
             </div>
           </div>
         </Parallax>

@@ -12,7 +12,7 @@ export const Freelance = () => {
   };
 
   return (
-    <div className="bg-gray-900 pb-32">
+    <div className="bg-gray-900 pb-16">
       <div className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 ">
         <h1 className="font-semibold pb-2 text-4xl text-white border-b-2 border-gray-900 transition ease-in-out duration-500 hover:border-cyan-200">
           Freelance
