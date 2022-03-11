@@ -65,7 +65,7 @@ export const ContactMe = () => {
         <MailIcon className="w-8 text-white" />
       </div>
       <Fade duration={2500} triggerOnce>
-        <div className="flex justify-center pb-16 mx-8 md:mx-0">
+        <div className="flex justify-center pb-16 mx-6 md:mx-0">
           <div className=" rounded-lg shadow-modalShadow md:w-3/4">
             <div className="text-white bg-gray-900 rounded-lg px-2 md:px-8 py-6 md:py-12 border-b-2 border-r-4 border-gray-800">
               <form onSubmit={handleSubmit(onSubmit)}>
