@@ -367,7 +367,7 @@ export default function Works({ divRef, setLoadImage2 }) {
 
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
 
-      <div className="grid grid-cols-3 gap-x-12 items-center  ">
+      {/* <div className="grid grid-cols-3 gap-x-12 items-center  ">
         {!seeMoreChat && (
           <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white  text-center">
             <div className="">
@@ -382,9 +382,9 @@ export default function Works({ divRef, setLoadImage2 }) {
               {!seeMoreChat && (
                 <div className={s.image}>
                   <img className={s.image__img} src={chat} alt="chat_room" />
-                  <div className={s.image__overlay}>
+                  <div className={s.image__overlay}> */}
                     {/* <button onClick={handleOnClickCuyo}> */}
-                    <a
+                    {/* <a
                       href="https://github.com/Facupelli/chat-room"
                       target="_blank"
                       rel="noreferrer"
@@ -393,15 +393,15 @@ export default function Works({ divRef, setLoadImage2 }) {
                         <div>SEE MORE</div>
                         <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
                       </div>
-                    </a>
+                    </a> */}
                     {/* </button> */}
-                  </div>
+                  {/* </div>
                 </div>
               )}
             </div>
           </Fade>
         </div>
-      </div>
+      </div> */}
 
       {/* ----------------------------------- CHAT-ROOM DESPLIEGUE ------------------------------------------ */}
 

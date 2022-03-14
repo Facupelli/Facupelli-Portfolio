@@ -109,7 +109,7 @@ export const ContactMe = () => {
                   <div className="col-span-3"></div>
                   <button
                     type="submit"
-                    className="transition ease-in-out duration-500 col-span-3 w-full mt-6 hover:shadow-quotesHover hover:text-white hover:bg-gray-900 bg-cyan-200 py-2 px-4 text-gray-900 font-bold rounded-sm "
+                    className="transition ease-in-out duration-500 col-span-3 w-full mt-6 hover:shadow-quotesHover hover:text-white hover:bg-gray-900 bg-gray-700 py-2 px-4 text-pink-400 font-bold rounded-sm "
                   >
                     SEND
                   </button>

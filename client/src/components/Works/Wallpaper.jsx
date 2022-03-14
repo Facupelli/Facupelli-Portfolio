@@ -20,8 +20,8 @@ export default function Wallpaper({setLoadImage2}) {
     <>
       <div className="hidden md:block shadow-inner ">
         <Parallax bgImage={codeImage} strength={200} onLoad={handleLoad}>
-          <div style={{ height: 370 }}>
-            <div style={insideStyles} className="mt-16" >
+          <div style={{ height: 350 }}>
+            <div style={insideStyles} className="mt-14" >
                 <MattersQuote />
             </div>
           </div>
