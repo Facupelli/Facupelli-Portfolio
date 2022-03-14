@@ -1,5 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 1em;
+  background-color: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #404759;
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #5c6680;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button {
+  border-style: solid;
+}
+
+/* Up */
+::-webkit-scrollbar-button:vertical:decrement {
+  border-width: 0 7px 14px 7px;
+  border-color: transparent transparent #404759 transparent;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover {
+  border-color: transparent transparent #404759 transparent;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:active {
+    border-color: transparent transparent #5c6680 transparent;
+  }
+
+/* Down */
+::-webkit-scrollbar-button:vertical:increment {
+  border-width: 14px 7px 0 7px;
+  border-color: #404759 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover {
+  border-color: #404759 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:increment:active {
+  border-color: #5c6680 transparent transparent transparent;
+}
