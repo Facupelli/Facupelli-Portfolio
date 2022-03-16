@@ -11,7 +11,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
     <div className="grid pb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
-        className="col-span-2 flex justify-center  gap-4 pb-4 items-center"
+        className="col-span-2 flex justify-center  gap-6 pb-4 items-center"
         align="center"
       >
         <Fade triggerOnce>
@@ -24,6 +24,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
             rel="noreferrer"
           >
             <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
+            <p className="text-xs pt-2 text-pink-200">LINK</p>
           </a>
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
           <a
@@ -32,12 +33,12 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
             rel="noreferrer"
           >
             <MarkGithubIcon
-              size={26}
-              className="text-pink-400 hover:text-pink-100"
+              className="w-6 h-6 text-pink-400 hover:text-pink-100"
             />
+            <p className="text-xs pt-2 text-pink-200">REPO</p>
           </a>
           <ArrowUpIcon
-            className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer hover:text-pink-100"
+            className="h-6 w-6 ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"
             onClick={handleOnClick}
           />
         </Fade>
