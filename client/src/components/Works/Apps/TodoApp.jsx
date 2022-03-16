@@ -33,7 +33,6 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
             <p className="text-xs pt-2 text-pink-200">LINK</p>
           </a>
 
-          {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
           <a
             href="https://github.com/Facupelli/TO-DO-Challenge"
             target="_blank"

@@ -8,7 +8,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
     setSeeMoreWeb(!seeMoreWeb);
   };
   return (
-    <div className="grid pb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
+    <div className="grid pt-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
         className="col-span-2 flex justify-center  gap-6 pb-4 items-center"

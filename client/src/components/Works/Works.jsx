@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { ArrowDownIcon, ArrowCircleDownIcon } from "@heroicons/react/solid";
+import {
+  ArrowDownIcon,
+  ArrowCircleDownIcon,
+  LinkIcon,
+} from "@heroicons/react/solid";
 import s from "./Works.module.css";
+import { MarkGithubIcon } from "@primer/octicons-react";
 
 //Media
 import home from "../../Media/cuyobrewers/newHome.png";
@@ -13,6 +18,7 @@ import CuyoBrewers from "./Apps/CuyoBrewers";
 import Matters from "../MattersQuote";
 import Wallpaper from "./Wallpaper";
 import { Works2 } from "./Works2";
+import Apps from "./Apps/Apps";
 
 // import { ArrowDownIcon } from "@primer/octicons-react";
 
@@ -53,9 +59,9 @@ export default function Works({ divRef, setLoadImage2 }) {
   };
 
   return (
-    <div className="bg-gray-900 pb-10 max-w-7xl mx-auto" ref={divRef} >
+    <div className="bg-gray-900 pb-10 max-w-7xl mx-auto" ref={divRef}>
       <div
-        className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 "
+        className="flex items-center mb-16 gap-x-2 pl-10 pt-8 md:pl-28 md:pt-16 "
         onClick={handleClickWorks}
       >
         <h1 className="font-semibold pb-2 text-4xl text-white cursor-pointer border-b-2 border-gray-900 transition ease-in-out duration-500 hover:border-cyan-200">
@@ -70,142 +76,74 @@ export default function Works({ divRef, setLoadImage2 }) {
 
       {/* ----------------------------------- WEBSERVICE CARD ------------------------------------------ */}
 
-      <div className="grid grid-cols-3 gap-x-12 items-center ">
-        {!seeMoreWeb && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white text-3xl text-center">
-            <div className="">
-              <p>SERVICES</p>
-              <p>E-COMMERCE</p>
-              <p className="text-xl">buy and offer services</p>
-            </div>
-          </div>
-        )}
-        <div className="col-span-3 md:col-span-2 ">
-          <Fade triggerOnce>
-            <div className=" flex justify-center md:justify-start">
-              {!seeMoreWeb && (
-                <div className={s.image}>
-                  <img
-                    className={s.image__img}
-                    src={webImage}
-                    alt="webservice"
-                  />
-                  <div className={s.image__overlay}>
-                    <button onClick={handleOnClickWeb}>
-                      <div className={s.image__title}>
-                        <div>SEE MORE</div>
-                        <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </Fade>
-        </div>
-      </div>
+      {!seeMoreWeb && (
+        <Apps
+          title="SERVICES"
+          subtitle="E-COMMERCE"
+          description="buy and offer services"
+          link="https://to-do-challenge-facupelli.vercel.app"
+          repo="https://github.com/Facupelli/TO-DO-Challenge"
+          handleOnClick={handleOnClickWeb}
+          image={webImage}
+        />
+      )}
 
       {/* ----------------------------------- DESPLIEGUE WEBSERVICE ------------------------------------------ */}
 
       {seeMoreWeb && (
-        <div className="">
-          <WebService setSeeMoreWeb={setSeeMoreWeb} seeMoreWeb={seeMoreWeb} />
-        </div>
+        <WebService setSeeMoreWeb={setSeeMoreWeb} seeMoreWeb={seeMoreWeb} />
       )}
 
       {/* ----------------------------------- CUYOBREWERS CARD ------------------------------------------ */}
 
-      <div className="grid grid-cols-3 gap-x-12 items-center  ">
-        {!seeMoreCuyo && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white  text-center">
-            <div className="mt-24">
-              <p className="text-3xl">HOMEBREW APP</p>
-              <p className="text-3xl">RECIPE BUILDER</p>
-              <p className="text-lg">post, comment and</p>
-              <p className="text-lg">follow beer recipes</p>
-            </div>
-          </div>
-        )}
-        <div className="col-span-3 md:col-span-2">
-          <Fade triggerOnce>
-            <div className="mt-24 flex justify-center md:justify-start ">
-              {!seeMoreCuyo && (
-                <div className={s.image}>
-                  <img className={s.image__img} src={home} alt="webservice" />
-                  <div className={s.image__overlay}>
-                    <button onClick={handleOnClickCuyo}>
-                      <div className={s.image__title}>
-                        <div>SEE MORE</div>
-                        <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </Fade>
-        </div>
-      </div>
+      {!seeMoreCuyo && (
+        <Apps
+          title="HOMEBREW APP"
+          subtitle="RECIPE BUILDER"
+          description="post, comment and"
+          description2="follow beer recipes"
+          link="https://pf-web-service.vercel.app"
+          repo="https://github.com/Facupelli/PI-Dogs"
+          handleOnClick={handleOnClickCuyo}
+          image={home}
+        />
+      )}
 
       {/* ----------------------------------- DESPLIEGUE CUYOBREWRES ------------------------------------------ */}
 
       {seeMoreCuyo && (
-        <div className="">
-          <CuyoBrewers
-            setSeeMoreCuyo={setSeeMoreCuyo}
-            seeMoreCuyo={seeMoreCuyo}
-          />
-        </div>
+        <CuyoBrewers
+          setSeeMoreCuyo={setSeeMoreCuyo}
+          seeMoreCuyo={seeMoreCuyo}
+        />
       )}
 
       {/* ----------------------------------- DOGS CARD ------------------------------------------ */}
 
-      <div className="grid grid-cols-3 gap-x-12 items-center  ">
-        {!seeMoreDogs && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white text-3xl text-center">
-            <div className="mt-24">
-              <p>DOG APP</p>
-              <p className="text-3xl">API CONSUMER</p>
-              <p className="text-xl">thedogapi.com</p>
-            </div>
-          </div>
-        )}
-        <div className="col-span-3 md:col-span-2">
-          <Fade triggerOnce>
-            <div className="mt-24 flex justify-center md:justify-start ">
-              {!seeMoreDogs && (
-                <div className={s.image}>
-                  <img className={s.image__img} src={dogImage} alt="dogs" />
-                  <div className={s.image__overlay}>
-                    <button onClick={handleOnClickDog}>
-                      <div className={s.image__title}>
-                        <div>SEE MORE</div>
-                        <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </Fade>
-        </div>
-      </div>
+      {!seeMoreDogs && (
+        <Apps
+          title="DOG APP"
+          subtitle="API CONSUMER"
+          description="thedogapi.com"
+          link="https://pi-dogs-definitive.vercel.app/"
+          repo="https://github.com/Facupelli/PI-Dogs"
+          handleOnClick={handleOnClickDog}
+          image={dogImage}
+        />
+      )}
 
       {/* ----------------------------------- DESPLIEGUE DOGS ------------------------------------------ */}
 
       {seeMoreDogs && (
-        <div className="">
-          <Dogs setSeeMoreDogs={setSeeMoreDogs} seeMoreDogs={seeMoreDogs} />
-        </div>
+        <Dogs setSeeMoreDogs={setSeeMoreDogs} seeMoreDogs={seeMoreDogs} />
       )}
 
       {/* ------------------------------------- QUOTTE ----------------------------------------------------- */}
 
-      <div className="mt-32 hidden md:block ">
+      <div className="md:mt-32 hidden md:block ">
         <Wallpaper setLoadImage2={setLoadImage2} />
       </div>
 
-      {/* ----------------------- SEE MORE PROJECTS ----------------------------- */}
 
       <div className="md:hidden block">
         <Fade triggerOnce>
@@ -213,11 +151,14 @@ export default function Works({ divRef, setLoadImage2 }) {
         </Fade>
       </div>
 
+      {/* ----------------------- SEE MORE PROJECTS ----------------------------- */}
+
+
       {!seeMoreProjects && (
         <div className="flex justify-center mt-16">
           <button
             onClick={handleSeeProjects}
-            className="transition ease-in-out duration-500 py-4 px-8 bg-gray-700 text-white font-bold rounded-lg hover:shadow-quotesHover hover:bg-gray-900"
+            className="transition ease-in-out duration-500 w-full md:w-auto mx-10 md:mx-0 py-4 px-8 bg-gray-700 text-white font-bold rounded-lg hover:shadow-quotesHover hover:bg-gray-900"
           >
             SEE MORE PROJECTS
           </button>
