@@ -25,7 +25,7 @@ export default function Apps({
       <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white text-3xl text-center">
         <div className="">
           <p>{title}</p>
-          <p>{subtitle}</p>
+          {subtitle && <p>{subtitle}</p>}
           <p className="text-lg">{description}</p>
           {description2 && <p className="text-lg">{description2}</p>}
           <div className="flex items-center justify-center mt-2 gap-6">

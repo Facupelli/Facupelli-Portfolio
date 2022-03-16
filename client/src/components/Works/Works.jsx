@@ -140,12 +140,12 @@ export default function Works({ divRef, setLoadImage2 }) {
 
       {/* ------------------------------------- QUOTTE ----------------------------------------------------- */}
 
-      <div className="md:mt-32 hidden md:block ">
+      <div className="md:mt-32 hidden md:block mb-24">
         <Wallpaper setLoadImage2={setLoadImage2} />
       </div>
 
 
-      <div className="md:hidden block">
+      <div className="md:hidden block mb-24">
         <Fade triggerOnce>
           <Matters />
         </Fade>
@@ -155,7 +155,7 @@ export default function Works({ divRef, setLoadImage2 }) {
 
 
       {!seeMoreProjects && (
-        <div className="flex justify-center mt-16">
+        <div className="flex justify-center mt-16 ">
           <button
             onClick={handleSeeProjects}
             className="transition ease-in-out duration-500 w-full md:w-auto mx-10 md:mx-0 py-4 px-8 bg-gray-700 text-white font-bold rounded-lg hover:shadow-quotesHover hover:bg-gray-900"

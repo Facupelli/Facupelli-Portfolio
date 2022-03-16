@@ -13,6 +13,7 @@ import chat from "../../Media/chatroom.png";
 import { Alkemy } from "./Apps/Alkemy";
 import TodoApp from "./Apps/TodoApp";
 import { Cognizant } from "./Apps/Cognizant";
+import Apps from "./Apps/Apps";
 
 export const Works2 = () => {
   const [seeMoreChat, setSeeMoreChat] = useState(false);
@@ -35,147 +36,70 @@ export const Works2 = () => {
   const handleOnClickChat = () => {
     setSeeMoreChat(!seeMoreChat);
   };
-  
+
   return (
     <>
       {/* ----------------------------------- TODO-APP CARD ------------------------------------------ */}
-      <div className="grid grid-cols-3 gap-x-12 items-center  ">
-        {!seeMoreTodo && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white  text-center">
-            <div className="mt-24">
-              <p className="text-3xl">TODO APP</p>
-              <p className="text-lg">create folders,post to-do</p>
-              <p className="text-lg">mark them as complete</p>
-            </div>
-          </div>
-        )}
-        <div className="col-span-3 md:col-span-2">
-          <Fade triggerOnce>
-            <div className="mt-24 flex justify-center md:justify-start">
-              {!seeMoreTodo && (
-                <div className={s.image}>
-                  <img
-                    className={s.image__img}
-                    src={homeTodo1}
-                    alt="chat_room"
-                  />
-                  <div className={s.image__overlay}>
-                    <button onClick={handleOnClickTodo}>
-                      <div className={s.image__title}>
-                        <div>SEE MORE</div>
-                        <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </Fade>
-        </div>
-      </div>
+      {!seeMoreTodo && (
+        <Apps
+          title="TODO APP"
+          description="create folders, post to-do"
+          description2="mark them as complete"
+          link="https://to-do-challenge-facupelli.vercel.app"
+          repo="https://github.com/Facupelli/TO-DO-Challenge"
+          handleOnClick={handleOnClickTodo}
+          image={homeTodo1}
+        />
+      )}
 
       {/* ----------------------------------- TODO-APP DESPLIEGUE ------------------------------------------ */}
 
       {seeMoreTodo && (
-        <div className="">
-          <TodoApp setSeeMoreTodo={setSeeMoreTodo} seeMoreTodo={seeMoreTodo} />
-        </div>
+        <TodoApp setSeeMoreTodo={setSeeMoreTodo} seeMoreTodo={seeMoreTodo} />
       )}
 
       {/* ----------------------------------- ALKEMY CARD ------------------------------------------ */}
 
-      <div className="grid grid-cols-3 gap-x-12 items-center  ">
-        {!seeMoreAlkemy && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white  text-center">
-            <div className="md:mt-32">
-              <p className="text-3xl">HOTEL MENU APP</p>
-              <p className="text-lg">Create the menu where</p>
-              <p className="text-lg">2 plates have to be vegan</p>
-            </div>
-          </div>
-        )}
-        <div className="col-span-3 md:col-span-2">
-          <Fade triggerOnce>
-            <div className="mt-24 md:mt-32 flex justify-center md:justify-start ">
-              {!seeMoreAlkemy && (
-                <div className={s.image}>
-                  <img
-                    className={s.image__img}
-                    src={homeAlkemy}
-                    alt="chat_room"
-                  />
-                  <div className={s.image__overlay}>
-                    <button onClick={handleOnClickAlkemy}>
-                      <div className={s.image__title}>
-                        <div>SEE MORE</div>
-                        <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </Fade>
-        </div>
-      </div>
+      {!seeMoreTodo && (
+        <Apps
+          title="HOTEL MENU APP"
+          description="Create the menu where"
+          description2="2 plates have to be vegan"
+          repo="https://github.com/Facupelli/Frontend-Alkemy-Challenge"
+          handleOnClick={handleOnClickAlkemy}
+          image={homeAlkemy}
+        />
+      )}
 
       {/* ----------------------------------- ALKEMY DESPLIEGUE ------------------------------------------ */}
 
       {seeMoreAlkemy && (
-        <div className="">
-          <Alkemy
-            setSeeMoreAlkemy={setSeeMoreAlkemy}
-            seeMoreAlkemy={seeMoreAlkemy}
-          />
-        </div>
+        <Alkemy
+          setSeeMoreAlkemy={setSeeMoreAlkemy}
+          seeMoreAlkemy={seeMoreAlkemy}
+        />
       )}
 
       {/* ----------------------------------- COGNIZANT CHALLENGE CARD ------------------------------------------ */}
-
-      <div className="grid grid-cols-3 gap-x-12 items-center  ">
-        {!seeMoreCognizant && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white  text-center">
-            <div className="mt-24">
-              <p className="text-3xl">COGNIZANT</p>
-              <p className="text-3xl">CHALLENGE</p>
-              <p className="text-lg">interview process app</p>
-            </div>
-          </div>
-        )}
-        <div className="col-span-3 md:col-span-2">
-          <Fade triggerOnce>
-            <div className="mt-24 flex justify-center md:justify-start">
-              {!seeMoreCognizant && (
-                <div className={s.image}>
-                  <img
-                    className={s.image__img}
-                    src={homeCognizant}
-                    alt="chat_room"
-                  />
-                  <div className={s.image__overlay}>
-                    <button onClick={handleOnClickCognizant}>
-                      <div className={s.image__title}>
-                        <div>SEE MORE</div>
-                        <ArrowDownIcon className="h-6 w-6 text-cyan-400" />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </Fade>
-        </div>
-      </div>
+      {!seeMoreCognizant && (
+        <Apps
+          title="COGNIZANT"
+          subtitle="CHALLENGE"
+          description="interview process app"
+          link="https://cognizant-challenge-delta.vercel.app/"
+          repo="https://github.com/Facupelli/Cognizant-Challenge"
+          handleOnClick={handleOnClickCognizant}
+          image={homeCognizant}
+        />
+      )}
 
       {/* ----------------------------------- COGNIZANT CHALLENGE DESPLIEGUE ------------------------------------------ */}
 
       {seeMoreCognizant && (
-        <div className="">
-          <Cognizant
-            setSeeMoreCognizant={setSeeMoreCognizant}
-            seeMoreCognizant={seeMoreCognizant}
-          />
-        </div>
+        <Cognizant
+          setSeeMoreCognizant={setSeeMoreCognizant}
+          seeMoreCognizant={seeMoreCognizant}
+        />
       )}
 
       {/* ----------------------------------- CHAT-ROOM CARD ------------------------------------------ */}
