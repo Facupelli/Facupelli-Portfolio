@@ -16,7 +16,7 @@ export const Home = () => {
   console.log(loadImage1, loadImage2);
 
   return (
-    <div>
+    <div className="bg-gray-900">
       <ParallaxComponent setLoadImage1={setLoadImage1} />
       <Works divRef={divRef} setLoadImage2={setLoadImage2} />
       <Freelance />

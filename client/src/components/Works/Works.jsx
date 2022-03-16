@@ -53,7 +53,7 @@ export default function Works({ divRef, setLoadImage2 }) {
   };
 
   return (
-    <div className="bg-gray-900 pb-10" ref={divRef}>
+    <div className="bg-gray-900 pb-10 max-w-7xl mx-auto" ref={divRef} >
       <div
         className="flex items-center gap-x-2 pl-10 py-8 md:pl-28 md:py-16 "
         onClick={handleClickWorks}
