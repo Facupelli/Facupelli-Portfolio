@@ -81,8 +81,8 @@ export default function Works({ divRef, setLoadImage2 }) {
           title="SERVICES"
           subtitle="E-COMMERCE"
           description="buy and offer services"
-          link="https://to-do-challenge-facupelli.vercel.app"
-          repo="https://github.com/Facupelli/TO-DO-Challenge"
+          link="https://pf-web-service.vercel.app/"
+          repo="https://github.com/Facupelli/PF-WebService"
           handleOnClick={handleOnClickWeb}
           image={webImage}
         />
@@ -102,8 +102,8 @@ export default function Works({ divRef, setLoadImage2 }) {
           subtitle="RECIPE BUILDER"
           description="post, comment and"
           description2="follow beer recipes"
-          link="https://pf-web-service.vercel.app"
-          repo="https://github.com/Facupelli/PI-Dogs"
+          link="https://cuyo-brewers-friends.vercel.app/"
+          repo="https://github.com/Facupelli/Cuyo-Brewers-Friends"
           handleOnClick={handleOnClickCuyo}
           image={home}
         />
