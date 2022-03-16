@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import {
-  ArrowDownIcon,
   ArrowCircleDownIcon,
-  LinkIcon,
 } from "@heroicons/react/solid";
-import s from "./Works.module.css";
-import { MarkGithubIcon } from "@primer/octicons-react";
 
 //Media
 import home from "../../Media/cuyobrewers/newHome.png";
@@ -19,8 +15,6 @@ import Matters from "../MattersQuote";
 import Wallpaper from "./Wallpaper";
 import { Works2 } from "./Works2";
 import Apps from "./Apps/Apps";
-
-// import { ArrowDownIcon } from "@primer/octicons-react";
 
 export default function Works({ divRef, setLoadImage2 }) {
   const [seeMoreProjects, setSeeMoreProjects] = useState(false);

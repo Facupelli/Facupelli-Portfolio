@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { Fade } from "react-awesome-reveal";
-import s from "./Works.module.css";
-import { ArrowDownIcon } from "@heroicons/react/solid";
 
 //Media
 import homeAlkemy from "../../Media/alkemy/home.png";
