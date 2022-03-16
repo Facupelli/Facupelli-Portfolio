@@ -37,6 +37,7 @@ module.exports = {
       },
       boxShadow: {
         modalShadow: "-10px -10px 0px -3px #ed64a6, -15px -15px 0px -3px #9decf9",
+        contactShadow: "-10px 0px 0px 0px #ed64a6",
         worksImagesLeft:
           "-7px -7px 0 -3px #1f2937, -7px -7px #9decf9, -14px -14px 0 -3px #1f2937, -14px -14px #ed64a6",
         worksImagesRight:

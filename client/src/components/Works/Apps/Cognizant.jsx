@@ -27,7 +27,7 @@ export const Cognizant = ({ setSeeMoreCognizant, seeMoreCognizant }) => {
             target="_blank"
             rel="noreferrer"
           >
-          <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
+            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
           </a>
           {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
           <a
@@ -87,9 +87,11 @@ export const Cognizant = ({ setSeeMoreCognizant, seeMoreCognizant }) => {
         <Slide duration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
-              The technologies I used for this project were React,
-              Styled-components, React-hook-form among other libraries for the
-              FRONT-END.
+              The technologies I used for this project were{" "}
+              <span className="font-semibold text-cyan-100">
+                React, Styled-components, react-hook-form
+              </span>{" "}
+              among other libraries for the FRONT-END.
             </p>
           </div>
         </Slide>

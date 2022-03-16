@@ -95,10 +95,19 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
         <Slide duration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
-              The technologies I used for this project were React, Redux and
-              pure CSS for the FRONT-END. Node.js, Express, Sequelize and PSQL
-              for the BACK-END. Other tools I used were Git, Github, Heroku and
-              Vercel.
+              The technologies I used for this project were{" "}
+              <span className="font-semibold text-cyan-100">React, Redux</span>{" "}
+              and pure CSS for the FRONT-END.{" "}
+              <span className="font-semibold text-cyan-100">
+                Node.js, Express, Sequelize
+              </span>{" "}
+              and <span className="font-semibold text-cyan-100">PSQL </span>
+              for the BACK-END. Other tools I used were{" "}
+              <span className="font-semibold text-cyan-100">
+                Git, Github, Heroku
+              </span>{" "}
+              and{" "}
+              <span className="font-semibold text-cyan-100">Vercel</span>.
             </p>
           </div>
         </Slide>

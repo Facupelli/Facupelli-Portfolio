@@ -2,10 +2,9 @@ import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { ArrowUpIcon, LinkIcon } from "@heroicons/react/solid";
 import { MarkGithubIcon } from "@primer/octicons-react";
-import detail from '../../../Media/cuyobrewers/newDetail.png'
-import form from '../../../Media/cuyobrewers/newFrom.png'
-import home from '../../../Media/cuyobrewers/newHome.png'
-
+import detail from "../../../Media/cuyobrewers/newDetail.png";
+import form from "../../../Media/cuyobrewers/newFrom.png";
+import home from "../../../Media/cuyobrewers/newHome.png";
 
 export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
   const handleOnClick = () => {
@@ -35,7 +34,10 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
             target="_blank"
             rel="noreferrer"
           >
-            <MarkGithubIcon size={26} className="text-pink-400 hover:text-pink-100"/>
+            <MarkGithubIcon
+              size={26}
+              className="text-pink-400 hover:text-pink-100"
+            />
           </a>
           <ArrowUpIcon
             className="h-6 w-6 ml-6 text-cyan-400 cursor-pointer hover:text-pink-100"
@@ -84,10 +86,18 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
         <Slide duration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
-              The technologies I used for this project were React, Redux with
-              Typescript, Tailwind, react-hook-form among other libraries for
-              the FRONT-END. Node.js, Express, MongoDB and Mongoose for the
-              BACK-END. THe project is deployed on Heroku and Vercel.
+              The technologies I used for this project were{" "}
+              <span className="font-semibold text-cyan-100">React, Redux</span>{" "}
+              with{" "}
+              <span className="font-semibold text-cyan-100">
+                Typescript, Tailwind, react-hook-form
+              </span>{" "}
+              among other libraries for the FRONT-END.{" "}
+              <span className="font-semibold text-cyan-100">
+                Node.js, Express, MongoDB
+              </span>{" "}
+              and <span className="font-semibold text-cyan-100">Mongoose</span>{" "}
+              for the BACK-END. THe project is deployed on Heroku and Vercel.
             </p>
           </div>
         </Slide>

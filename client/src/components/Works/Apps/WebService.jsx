@@ -94,11 +94,22 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         <Slide duration={1500} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body">
-              The technologies we used for this project were React, Redux,
-              Material UI among other libraries for the FRONT-END. Node.js,
-              Express, Sequelize and PSQL for the BACK-END. Other tools we used
-              were Git, Github, Heroku and Vercel. We also worked with SCRUM
-              methodology.
+              The technologies we used for this project were{" "}
+              <span className="font-semibold text-cyan-100">
+                React, Redux, Material UI
+              </span>
+              among other libraries for the FRONT-END.{" "}
+              <span className="font-semibold text-cyan-100">
+                Node.js, Express, Sequelize
+              </span>
+              and <span className="font-semibold text-cyan-100">PSQL </span> for
+              the BACK-END. Other tools we used were{" "}
+              <span className="font-semibold text-cyan-100">
+                Git, Github, Heroku
+              </span>{" "}
+              and
+              <span className="font-semibold text-cyan-100"> Vercel</span>. We
+              also worked with SCRUM methodology.
             </p>
           </div>
         </Slide>
