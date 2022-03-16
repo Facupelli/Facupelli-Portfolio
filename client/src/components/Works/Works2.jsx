@@ -60,7 +60,7 @@ export const Works2 = () => {
 
       {/* ----------------------------------- ALKEMY CARD ------------------------------------------ */}
 
-      {!seeMoreTodo && (
+      {!seeMoreAlkemy && (
         <Apps
           title="HOTEL MENU APP"
           description="Create the menu where"

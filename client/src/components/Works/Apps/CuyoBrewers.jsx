@@ -11,7 +11,7 @@ export default function CuyoBrewers({ setSeeMoreCuyo, seeMoreCuyo }) {
     setSeeMoreCuyo(!seeMoreCuyo);
   };
   return (
-    <div className="grid pt-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
+    <div className="grid mb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
         className="col-span-2 flex justify-center  gap-6 pb-4 items-center"

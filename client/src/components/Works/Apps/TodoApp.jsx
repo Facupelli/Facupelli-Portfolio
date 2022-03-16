@@ -11,7 +11,7 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
   };
 
   return (
-    <div className="grid mb-8 grid-cols-2 gap-x-5 gap-y-10">
+    <div className="grid mb-24 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
         className="col-span-2 flex justify-center items-center gap-6 pb-4"
