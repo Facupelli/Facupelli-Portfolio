@@ -17,12 +17,14 @@ export const Home = () => {
 
   return (
     <div className="bg-gray-900">
+    <div className="max-w-7xl mx-auto">
       <ParallaxComponent setLoadImage1={setLoadImage1} />
       <Works divRef={divRef} setLoadImage2={setLoadImage2} />
       <Freelance />
       <AboutMe />
       <ContactMe />
       <Footer divRef={divRef} />
+    </div>
     </div>
   );
 };
