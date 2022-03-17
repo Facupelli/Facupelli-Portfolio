@@ -45,7 +45,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div className="col-span-2 md:col-span-1 mt-auto mb-auto bg-pink-100 ">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto ">
         <Slide duration={2000} triggerOnce>
           <div className="px-8 md:p-8">
             <p className="md:w-3/4 text-white font-body md:text-right">
@@ -58,7 +58,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         </Slide>
       </div>
 
-      <div className="col-span-2 md:col-span-1 bg-cyan-100" align="left">
+      <div className="col-span-2 md:col-span-1 " align="left">
         <Slide duration={1500} triggerOnce>
           <img
             className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
