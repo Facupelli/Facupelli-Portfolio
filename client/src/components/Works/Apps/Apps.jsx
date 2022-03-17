@@ -19,7 +19,7 @@ export default function Apps({
       <div className="grid grid-cols-3 gap-x-12 items-center mb-16 md:mb-24">
         <div className="col-span-3 mb-4 md:mb-0 md:col-span-1 md:flex justify-end font-bold  text-white text-lg md:text-3xl md:text-center">
           <div className="flex justify-start mx-10 items-center gap-6 md:block">
-            <div>
+            <div className="">
               <p>{title}</p>
               {subtitle && <p>{subtitle}</p>}
             </div>
@@ -28,16 +28,16 @@ export default function Apps({
               <p className="hidden md:block text-lg">{description2}</p>
             )}
 
-            <div className="flex items-center justify-center mt-2 gap-6">
-              <div className="flex flex-col text-gray-400 hover:text-pink-200 pt-1 md:pt-4">
+            <div className="flex items-center justify-center md:mt-2 gap-6">
+              <div className="flex flex-col text-gray-400 hover:text-pink-200 pt-3 md:pt-4">
                 <a href={link} target="_blank" rel="noreferrer">
-                  <LinkIcon className="h-6 w-6  " />
+                  <LinkIcon className="h-4 w-4 md:h-6 md:w-6  " />
                   <p className="text-xs pt-2  ">LINK</p>
                 </a>
               </div>
               <div className="flex flex-col text-gray-400 hover:text-pink-100 p-0">
                 <a href={repo} target="_blank" rel="noreferrer">
-                  <MarkGithubIcon className="h-6 w-6 " />
+                  <MarkGithubIcon className="h-4 w-4 md:h-6 md:w-6 " />
                   <p className="text-xs pt-2">REPO</p>
                 </a>
               </div>

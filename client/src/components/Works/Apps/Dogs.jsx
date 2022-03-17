@@ -17,7 +17,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       >
         <Fade triggerOnce>
           <p
-            className="text-2xl md:text-2xl md:text-3xl font-semibold text-pink-400"
+            className="text-2xlmd:text-3xl font-semibold text-pink-400"
             color="purple.300"
           >
             THE DOG APP
