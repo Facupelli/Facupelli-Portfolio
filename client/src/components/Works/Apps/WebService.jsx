@@ -47,7 +47,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
       <div className="col-span-2 md:col-span-1 mt-auto mb-auto ">
         <Slide duration={2000} triggerOnce>
-          <div className="px-8 md:p-8">
+          <div className="px-8 md:p-8 flex justify-end">
             <p className="md:w-3/4 text-white font-body md:text-right">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
@@ -117,10 +117,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
-      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
+      <div  className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={2000} triggerOnce>
-          <div className="px-8 md:p-8">
-            <p className="md:w-3/4 text-white font-body">
+          <div className="px-8 md:p-8 flex justify-end">
+            <p className="md:w-3/4 text-white font-body md:text-right">
               In the app you can post a service, add a service to favourites,
               buy a service and then rate it among other functions. As the Admin
               user you can view all kind of statistics related to users and to

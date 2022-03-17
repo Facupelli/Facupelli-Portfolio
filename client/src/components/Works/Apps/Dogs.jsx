@@ -51,10 +51,10 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
+      <div  className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={2000} triggerOnce>
-          <div className="px-8 md:p-8 ">
-            <p className="md:w-3/4 text-white font-body">
+          <div className="px-8 md:p-8 flex justify-end">
+            <p className="md:w-3/4 text-white font-body md:text-right">
               This was my first full stack experience at Henry Bootcamp. The
               Dogg App is a SPA (Single Page Application) that consumes data of
               an API (The Dog API). In the app you can find all dogs breeds,
@@ -114,10 +114,10 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       </div>
 
       {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
-      <div className="col-span-2 md:col-span-1 mt-auto mb-auto" align="right">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto" >
         <Slide duration={2000} triggerOnce>
-          <div className="px-8 md:p-8">
-            <p className="md:w-3/4 text-white font-body">
+          <div className="px-8 md:p-8 flex justify-end">
+            <p className="md:w-3/4 text-white font-body md:text-right">
               You can create a breed selecting some characteristics and a photo.
               The new breed created is stored in the database. You can then
               filter by API breeds or your own breeds.

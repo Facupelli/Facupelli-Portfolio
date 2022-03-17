@@ -51,10 +51,10 @@ export const Cognizant = ({ setSeeMoreCognizant, seeMoreCognizant }) => {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
+      <div  className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={2000} triggerOnce>
-          <div className="px-8 md:p-8">
-            <p className="md:w-3/4 text-white font-body">
+          <div className="px-8 md:p-8 flex justify-end">
+            <p className="md:w-3/4 text-white font-body md:text-right">
               This project is a frontend challenge using React.js. It is a
               candidate manager for a selection process. The app has five column
               which represent the candidate instances.
@@ -101,10 +101,10 @@ export const Cognizant = ({ setSeeMoreCognizant, seeMoreCognizant }) => {
       </div>
 
       {/* ------------------------------------- TERCER PARRAFO --------------------------------------------- */}
-      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
+      <div  className="col-span-2 md:col-span-1 mt-auto mb-auto">
         <Slide duration={2000} triggerOnce>
-          <div className="px-8 md:p-8">
-            <p className="md:w-3/4 text-white font-body">
+          <div className="px-8 md:p-8 flex justify-end">
+            <p className="md:w-3/4 text-white font-body md:text-right">
               In the app you can add a candidate which will automatically
               display on the first column. Then you can move the candidate one
               column at a time. You can edit the candidate name, and note, where
