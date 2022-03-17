@@ -60,47 +60,47 @@ export const ContactMe = () => {
 
   return (
     <div className="bg-gray-900 pt-16 max-w-7xl mx-auto">
-      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-28 md:py-16 ">
+      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-24 md:py-16 ">
         <p className="font-semibold text-4xl text-white ">Contact Me</p>
         <MailIcon className="w-8 text-white" />
       </div>
       <Fade duration={2500} triggerOnce>
-        <div className="flex justify-center pb-16 mx-6 md:mx-0">
-          <div className=" rounded-lg shadow-contactShadow md:w-3/4">
-            <div className="text-white bg-gray-900 rounded-tr-lg rounded-br-lg px-2 md:px-8 py-6 md:py-12 border-b-2 border-r-4 border-t-2 border-gray-800">
+        <div className="flex justify-center pb-16 mx-8 md:mx-0">
+          <div className=" rounded-lg shadow-contactShadow w-full md:w-3/4">
+            <div className="text-white bg-gray-900 rounded-tr-lg rounded-br-lg px-6 md:px-8 py-6 md:py-12 border-b-2 border-r-4 border-t-2 border-gray-800">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="grid gap-y-6 grid-cols-6 items-end text-lg mx-auto ">
-                  <label className="col-span-2 md:col-span-1 font-semibold ">
+                  <label className="col-span-6 md:col-span-1 font-semibold ">
                     Name:
                   </label>
                   <input
                     {...register("name")}
                     name="name"
-                    className="col-span-4 md:col-span-5  p-2 rounded bg-gray-800 border-b-2 border-cyan-200 focus:outline-none focus:border-pink-400"
+                    className="col-span-6 md:col-span-5  p-2 rounded bg-gray-800 border-b-2 border-cyan-200 focus:outline-none focus:border-pink-400"
                   />
                   <span className="col-span-1"></span>
                   <span className="col-span-5 text-pink-500 font-semibold">
                     {errors.name && errors.name.message}
                   </span>
-                  <label className="col-span-2 md:col-span-1 font-semibold">
+                  <label className="col-span-6 md:col-span-1 font-semibold">
                     Email:
                   </label>
                   <input
                     {...register("email")}
                     name="email"
-                    className="col-span-4 md:col-span-5 rounded bg-gray-800 border-b-2 border-cyan-200 focus:outline-none focus:border-pink-400 p-2"
+                    className="col-span-6 md:col-span-5 rounded bg-gray-800 border-b-2 border-cyan-200 focus:outline-none focus:border-pink-400 p-2"
                   />
                   <span className="col-span-1"></span>
                   <span className="col-span-5 text-pink-500 font-semibold">
                     {errors.email && errors.email.message}
                   </span>
-                  <label className="col-span-2 md:col-span-1 font-semibold">
+                  <label className="col-span-6 md:col-span-1 font-semibold">
                     Message:
                   </label>
                   <textarea
                     {...register("message")}
                     name="message"
-                    className="col-span-4 md:col-span-5 rounded bg-gray-800 border-b-2 border-cyan-200 focus:outline-none focus:border-pink-400 p-2"
+                    className="col-span-6 md:col-span-5 rounded bg-gray-800 border-b-2 border-cyan-200 focus:outline-none focus:border-pink-400 p-2"
                   />
                   <span className="col-span-1"></span>
                   <span className="col-span-5 text-pink-500 font-semibold">

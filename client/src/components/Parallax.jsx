@@ -28,11 +28,9 @@ export default function ParallaxComponent({ setLoadImage1 }) {
           </div>
         </Parallax>
       </div>
-      <div className="md:hidden bg-intro bg-bottom-18">
-        <div className="h-parallaxLG ">
-          <div style={insideStyles}>
-            <Name />
-          </div>
+      <div className="md:hidden bg-intro bg-bottom-18 min-h-screen">
+        <div style={insideStyles}>
+          <Name />
         </div>
       </div>
     </>

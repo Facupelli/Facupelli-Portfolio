@@ -55,7 +55,7 @@ export default function Works({ divRef, setLoadImage2 }) {
   return (
     <div className="bg-gray-900 pb-10 max-w-7xl mx-auto" ref={divRef}>
       <div
-        className="flex items-center mb-16 gap-x-2 pl-10 pt-8 md:pl-28 md:pt-16 "
+        className="flex items-center mb-16 gap-x-2 pl-10 pt-8 md:pl-24 md:pt-16 "
         onClick={handleClickWorks}
       >
         <h1 className="font-semibold pb-2 text-4xl text-white cursor-pointer border-b-2 border-gray-900 transition ease-in-out duration-500 hover:border-cyan-200">

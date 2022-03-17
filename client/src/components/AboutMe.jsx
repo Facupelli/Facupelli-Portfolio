@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 export default function AboutMe() {
   return (
     <div className="md:pt-0  pt-16 bg-gray-900 max-w-7xl mx-auto">
-      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-28 md:py-16 ">
+      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-24 md:py-16 ">
         <p className="font-semibold text-4xl text-white ">About Me</p>
         <InformationCircleIcon className="w-8 text-white" />
       </div>
