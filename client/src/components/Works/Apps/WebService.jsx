@@ -61,7 +61,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div className="col-span-2 md:col-span-1 " align="left">
         <Slide duration={1500} triggerOnce>
           <img
-            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
+            className="md:shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785254/webservice_1_hs8uig.png"
             alt="landing"
@@ -73,7 +73,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div className="col-span-2 md:col-span-1" align="right">
         <Slide duration={2000} triggerOnce>
           <img
-            className="shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
+            className="shadow-none md:shadow-worksImagesLeft ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785253/webservice_2_goezem.png"
             alt="landing"
@@ -143,7 +143,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       <div className="col-span-2 md:col-span-1" align="cenleftter">
         <Slide duration={1500} triggerOnce>
           <img
-            className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
+            className="md:shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
             objectfit="cover"
             src="https://res.cloudinary.com/dzjz8pe0y/image/upload/v1637785251/webservice_5_injoqw.png"
             alt="landing"
