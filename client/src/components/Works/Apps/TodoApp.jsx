@@ -14,33 +14,35 @@ export default function TodoApp({ setSeeMoreTodo, seeMoreTodo }) {
     <div className="grid mb-24 grid-cols-2 gap-x-5 gap-y-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
-        className="col-span-2 flex justify-center items-center gap-6 pb-4"
+        className="col-span-2 flex justify-center items-center md:gap-6 md:pb-4"
         align="center"
       >
         <Fade triggerOnce>
           <p
-            className="text-3xl font-semibold text-pink-400"
+            className="text-2xl md:text-3xl font-semibold text-pink-400"
             color="purple.300"
           >
             TODO APP
           </p>
-          <a
-            href="https://to-do-challenge-facupelli.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
-            <p className="text-xs pt-2 text-pink-200">LINK</p>
-          </a>
+          <div className="hidden md:flex gap-4 items-end ">
+            <a
+              href="https://to-do-challenge-facupelli.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
+              <p className="text-xs pt-2 text-pink-200">LINK</p>
+            </a>
 
-          <a
-            href="https://github.com/Facupelli/TO-DO-Challenge"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <MarkGithubIcon className="h-6 w-6 text-pink-400 hover:text-pink-100" />
-            <p className="text-xs pt-2 text-pink-200">REPO</p>
-          </a>
+            <a
+              href="https://github.com/Facupelli/TO-DO-Challenge"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MarkGithubIcon className="h-6 w-6 text-pink-400 hover:text-pink-100" />
+              <p className="text-xs pt-2 text-pink-200">REPO</p>
+            </a>
+          </div>
 
           <ArrowUpIcon
             className="h-6 w-6 ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"

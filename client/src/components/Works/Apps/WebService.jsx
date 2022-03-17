@@ -11,32 +11,32 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
     <div className="grid mb-16 md:mb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center mx-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
-        className="col-span-2 flex justify-center  gap-6 pb-4 items-center"
+        className="col-span-2 flex justify-center  gap-2 md:gap-6 md:pb-4 items-center"
         align="center"
       >
         <Fade triggerOnce>
           <p className="text-2xl md:text-3xl font-semibold text-pink-400 hover:text-pink-100">
             WEBSERVICE
           </p>
-          <a
-            href="https://pf-web-service.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
-            <p className="text-xs pt-2 text-pink-200">LINK</p>
-          </a>
-          {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
-          <a
-            href="https://github.com/Facupelli/PI-Dogs"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <MarkGithubIcon
-              className="w-6 h-6 text-pink-400 hover:text-pink-100"
-            />
-            <p className="text-xs pt-2 text-pink-200">REPO</p>
-          </a>
+          <div className="hidden md:flex gap-4 items-end ">
+            <a
+              href="https://pf-web-service.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkIcon className="h-6 w-6 text-pink-400 hover:text-pink-100 animate-bounce-slow" />
+              <p className="text-xs pt-2 text-pink-200">LINK</p>
+            </a>
+            {/* <img src={github} alt="github" className="h-6 w-6 fill-pink-400" /> */}
+            <a
+              href="https://github.com/Facupelli/PI-Dogs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MarkGithubIcon className="w-6 h-6 text-pink-400 hover:text-pink-100" />
+              <p className="text-xs pt-2 text-pink-200">REPO</p>
+            </a>
+          </div>
           <ArrowUpIcon
             className="h-6 w-6 md:ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"
             onClick={handleOnClick}
@@ -45,10 +45,10 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
       </div>
 
       {/* ------------------------------------- PRIMER PARRAFO --------------------------------------------- */}
-      <div align="right" className="col-span-2 md:col-span-1 mt-auto mb-auto">
+      <div className="col-span-2 md:col-span-1 mt-auto mb-auto bg-pink-100 ">
         <Slide duration={2000} triggerOnce>
           <div className="px-8 md:p-8">
-            <p className="md:w-3/4 text-white font-body">
+            <p className="md:w-3/4 text-white font-body md:text-right">
               This was my last project at Henry Bootcamp, I worked with 7
               teammates both in the FRONT-END and BACK-END to create this app.
               WebService is a service e-commerce where you can offer or buy a
@@ -58,7 +58,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
         </Slide>
       </div>
 
-      <div className="col-span-2 md:col-span-1" align="left">
+      <div className="col-span-2 md:col-span-1 bg-cyan-100" align="left">
         <Slide duration={1500} triggerOnce>
           <img
             className="shadow-worksImagesRight ml-6 md:ml-0 rounded-lg w-90% md:w-3/4"
