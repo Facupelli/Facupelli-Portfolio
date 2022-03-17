@@ -8,14 +8,14 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
     setSeeMoreWeb(!seeMoreWeb);
   };
   return (
-    <div className="grid mb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center">
+    <div className="grid mb-16 md:mb-24 grid-cols-2 gap-x-5 gap-y-10 place-items-center place-content-center mx-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
         className="col-span-2 flex justify-center  gap-6 pb-4 items-center"
         align="center"
       >
         <Fade triggerOnce>
-          <p className="text-3xl font-semibold text-pink-400 hover:text-pink-100">
+          <p className="text-2xl md:text-3xl font-semibold text-pink-400 hover:text-pink-100">
             WEBSERVICE
           </p>
           <a
@@ -38,7 +38,7 @@ export default function WebService({ setSeeMoreWeb, seeMoreWeb }) {
             <p className="text-xs pt-2 text-pink-200">REPO</p>
           </a>
           <ArrowUpIcon
-            className="h-6 w-6 ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"
+            className="h-6 w-6 md:ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"
             onClick={handleOnClick}
           />
         </Fade>

@@ -16,16 +16,20 @@ export default function Apps({
 }) {
   return (
     <Fade triggerOnce>
-      <div className="grid grid-cols-3 gap-x-12 items-center mb-24">
-        <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white text-3xl text-center">
-          <div className="">
-            <p>{title}</p>
-            {subtitle && <p>{subtitle}</p>}
-            <p className="text-lg">{description}</p>
-            {description2 && <p className="text-lg">{description2}</p>}
-            
+      <div className="grid grid-cols-3 gap-x-12 items-center mb-16 md:mb-24">
+        <div className="col-span-3 mb-4 md:mb-0 md:col-span-1 md:flex justify-end font-bold  text-white text-lg md:text-3xl md:text-center">
+          <div className="flex justify-start mx-10 items-center gap-6 md:block">
+            <div>
+              <p>{title}</p>
+              {subtitle && <p>{subtitle}</p>}
+            </div>
+            <p className="hidden md:block text-lg">{description}</p>
+            {description2 && (
+              <p className="hidden md:block text-lg">{description2}</p>
+            )}
+
             <div className="flex items-center justify-center mt-2 gap-6">
-              <div className="flex flex-col text-gray-400 hover:text-pink-200 pt-4">
+              <div className="flex flex-col text-gray-400 hover:text-pink-200 pt-1 md:pt-4">
                 <a href={link} target="_blank" rel="noreferrer">
                   <LinkIcon className="h-6 w-6  " />
                   <p className="text-xs pt-2  ">LINK</p>

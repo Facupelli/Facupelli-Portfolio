@@ -9,7 +9,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
   };
 
   return (
-    <div className="grid mb-8  grid-cols-2 gap-x-5 gap-y-10">
+    <div className="grid mb-8  grid-cols-2 gap-x-5 gap-y-10 mx-10">
       {/* ------------------------------------- TITULO --------------------------------------------- */}
       <div
         className="col-span-2 flex justify-center items-center gap-6 pb-4"
@@ -17,7 +17,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
       >
         <Fade triggerOnce>
           <p
-            className="text-3xl font-semibold text-pink-400"
+            className="text-2xl md:text-2xl md:text-3xl font-semibold text-pink-400"
             color="purple.300"
           >
             THE DOG APP
@@ -42,7 +42,7 @@ export default function Dogs({ setSeeMoreDogs, seeMoreDogs }) {
           </a>
 
           <ArrowUpIcon
-            className="h-6 w-6 ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"
+            className="h-6 w-6 md:ml-4 text-cyan-400 cursor-pointer hover:text-pink-100"
             onClick={handleOnClick}
           />
         </Fade>
