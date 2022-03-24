@@ -49,9 +49,11 @@ module.exports = {
       },
       backgroundImage: {
         intro: "url('/src/imgs/mountain2.jpg')",
+        lgIntro: "url('/src/imgs/mountainPurple.avif')",
       },
       backgroundPosition: {
-        "bottom-18": "center top -18rem",
+        "bottom-18": "center bottom 40rem",
+        "bottom-manos": "center bottom 18rem",
       },
     },
   },

@@ -2,9 +2,10 @@ import React, { useRef, useState } from "react";
 import Works from "./Works/Works";
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
-import ParallaxComponent from "./Parallax";
+import ParallaxComponent from "./ParallaxComponent";
 import { ContactMe } from "./ContactMe";
 import { Freelance } from "./Freelance/Freelance";
+import Quotte2 from "./Quotte2";
 
 export const Home = () => {
   const divRef = useRef(null);
@@ -22,6 +23,7 @@ export const Home = () => {
       <Works divRef={divRef} setLoadImage2={setLoadImage2} />
       <Freelance />
       <AboutMe />
+      <Quotte2 />
       <ContactMe />
       <Footer divRef={divRef} />
     </div>

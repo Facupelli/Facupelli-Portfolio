@@ -19,10 +19,10 @@ export default function Wallpaper({setLoadImage2}) {
   return (
     <>
       <div className="hidden md:block shadow-inner ">
-        <Parallax bgImage={codeImage} strength={200} onLoad={handleLoad}>
+        <Parallax bgImage={codeImage} strength={300} onLoad={handleLoad}>
           <div style={{ height: 350 }}>
             <div style={insideStyles} className="mt-14" >
-                <MattersQuote />
+                <MattersQuote text="Do what you love. Love what you do." icon/>
             </div>
           </div>
         </Parallax>
