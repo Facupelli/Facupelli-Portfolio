@@ -141,7 +141,7 @@ export default function Works({ divRef, setLoadImage2 }) {
 
       <div className="md:hidden block mb-24">
         <Fade triggerOnce>
-          <Matters />
+          <Matters text="Do what you love. Love what you do." icon/>
         </Fade>
       </div>
 
