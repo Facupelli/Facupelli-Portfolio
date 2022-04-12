@@ -18,8 +18,14 @@ export default function ParallaxComponent({ setLoadImage1 }) {
 
   return (
     <>
-      <div className="hidden md:block">
-        <div style={{ height: 500 }} className="bg-lgIntro bg-cover bg-bottom-18">
+      <div className="">
+        <div
+          style={{ height: 500 }}
+          className="hidden md:block bg-lgIntro bg-cover bg-bottom-18"
+        >
+          <Name />
+        </div>
+        <div className="md:hidden text-white mb-20">
           <Name />
         </div>
       </div>

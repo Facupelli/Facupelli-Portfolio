@@ -13,7 +13,7 @@ export const Freelance = () => {
 
   return (
     <div className="bg-gray-900 pb-16">
-      <div className="flex items-center gap-x-2 pl-10 py-8 md:pl-24 md:py-16 ">
+      <div className="flex items-center gap-x-2 pl-10 py-8 md:py-16 ">
         <h1 className="font-semibold pb-2 text-4xl text-white border-b-2 border-gray-900 transition ease-in-out duration-500 hover:border-cyan-200">
           Freelance
         </h1>
@@ -24,7 +24,7 @@ export const Freelance = () => {
 
       <div className="grid grid-cols-3 gap-x-12 items-center ">
         {!alalaCampo && (
-          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white text-3xl text-center">
+          <div className="hidden md:col-span-1 md:flex justify-end font-bold  text-white text-2xl text-center">
             <div className="">
               <p>ALALA CAMPO</p>
               <p className="text-xl">Info website</p>

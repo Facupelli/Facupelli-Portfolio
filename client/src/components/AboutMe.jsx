@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 export default function AboutMe() {
   return (
     <div className="md:pt-0  pt-16 bg-gray-900 max-w-7xl mx-auto">
-      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-24 md:py-16 ">
+      <div className="flex items-center gap-x-2 pl-10  pb-16 md:py-16 ">
         <p className="font-semibold text-4xl text-white ">About Me</p>
         <InformationCircleIcon className="w-8 text-white" />
       </div>
@@ -23,10 +23,9 @@ export default function AboutMe() {
             <p>
               Hello, my name is Facundo and I enjoy creating things since I was
               a child. I had always been passionate about technology and making
-              things with the internet so I decided to start learning web
-              development at Henry Bootcamp. I am now graduated and looking for
-              my first opportunity to contribute on challenging projects with
-              everything I have learned and still learning everyday.
+              things with the internet. I am currently looking for my first
+              opportunity to contribute on challenging projects in the IT world
+              with everything I have learned and still learning everyday.
             </p>
             <p className="mt-2">
               I am a very{" "}

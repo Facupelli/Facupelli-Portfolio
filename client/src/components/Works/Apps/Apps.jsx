@@ -17,7 +17,7 @@ export default function Apps({
   return (
     <Fade triggerOnce>
       <div className="grid grid-cols-3 gap-x-12 items-center mb-16 md:mb-24">
-        <div className="col-span-3 mb-4 md:mb-0 md:col-span-1 md:flex justify-end font-bold  text-white text-lg md:text-3xl md:text-center">
+        <div className="col-span-3 mb-4 md:mb-0 md:col-span-1 md:flex justify-end font-bold  text-white text-lg md:text-2xl md:text-center">
           <div className="flex justify-start mx-10 items-center gap-6 md:block">
             <div className="">
               <p>{title}</p>

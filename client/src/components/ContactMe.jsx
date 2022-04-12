@@ -60,7 +60,7 @@ export const ContactMe = () => {
 
   return (
     <div className="bg-gray-900 pt-16 max-w-7xl mx-auto">
-      <div className="flex items-center gap-x-2 pl-10  pb-16 md:pl-24 md:py-16 ">
+      <div className="flex items-center gap-x-2 pl-10  pb-16 md:py-16 ">
         <p className="font-semibold text-4xl text-white ">Contact Me</p>
         <MailIcon className="w-8 text-white" />
       </div>
