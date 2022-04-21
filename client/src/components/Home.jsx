@@ -10,7 +10,6 @@ import Quotte2 from "./Quotte2";
 export const Home = () => {
   const divRef = useRef(null);
 
-
   const [loadImage1, setLoadImage1] = useState(true);
   const [loadImage2, setLoadImage2] = useState(true);
 
@@ -18,15 +17,15 @@ export const Home = () => {
 
   return (
     <div className="bg-gray-900">
-    <div className="max-w-7xl mx-auto">
       <ParallaxComponent setLoadImage1={setLoadImage1} />
-      <Works divRef={divRef} setLoadImage2={setLoadImage2} />
-      <Freelance />
-      <AboutMe />
-      <Quotte2 />
-      <ContactMe />
-      <Footer divRef={divRef} />
-    </div>
+      <div className="max-w-7xl mx-auto">
+        <Works divRef={divRef} setLoadImage2={setLoadImage2} />
+        <Freelance />
+        <AboutMe />
+        <Quotte2 />
+        <ContactMe />
+        <Footer divRef={divRef} />
+      </div>
     </div>
   );
 };

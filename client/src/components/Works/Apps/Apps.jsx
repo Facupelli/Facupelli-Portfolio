@@ -1,8 +1,8 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import { ArrowDownIcon, LinkIcon } from "@heroicons/react/solid";
+import { ArrowDownIcon } from "@heroicons/react/solid";
 import s from "../Works.module.css";
-import { MarkGithubIcon } from "@primer/octicons-react";
+import { MarkGithubIcon, LinkIcon } from "@primer/octicons-react";
 
 export default function Apps({
   title,
@@ -29,7 +29,7 @@ export default function Apps({
             )}
 
             <div className="flex items-center justify-center md:mt-2 gap-6">
-              <div className="flex flex-col text-gray-400 hover:text-pink-200 pt-3 md:pt-4">
+              <div className="flex flex-col text-gray-400 hover:text-pink-200 p-0 ">
                 <a href={link} target="_blank" rel="noreferrer">
                   <LinkIcon className="h-4 w-4 md:h-6 md:w-6  " />
                   <p className="text-xs pt-2  ">LINK</p>
