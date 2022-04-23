@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import homeAlkemy from "../../Media/alkemy/home.png";
 import homeTodo1 from "../../Media/todo/home1.png";
 import homeCognizant from "../../Media/cognizant/1.png";
+import homeVirtual from "../../Media/virtual360/uploadImgs.png";
 import chat from "../../Media/chatroom.png";
 
 //Components
@@ -11,12 +12,15 @@ import { Alkemy } from "./Apps/Alkemy";
 import TodoApp from "./Apps/TodoApp";
 import { Cognizant } from "./Apps/Cognizant";
 import Apps from "./Apps/Apps";
+import Virtual360 from "./Apps/Virtual360";
 
 export const Works2 = () => {
   const [seeMoreChat, setSeeMoreChat] = useState(false);
   const [seeMoreAlkemy, setSeeMoreAlkemy] = useState(false);
   const [seeMoreTodo, setSeeMoreTodo] = useState(false);
   const [seeMoreCognizant, setSeeMoreCognizant] = useState(false);
+  const [seeMoreVirtual360, setSeeMoreVirtual360] = useState(false);
+
 
   const handleOnClickAlkemy = () => {
     setSeeMoreAlkemy(!seeMoreAlkemy);
@@ -29,6 +33,10 @@ export const Works2 = () => {
   const handleOnClickCognizant = () => {
     setSeeMoreCognizant(!seeMoreCognizant);
   };
+
+  const handleOnClickVirtual = () => {
+    setSeeMoreVirtual360(!seeMoreVirtual360)
+  }
 
   const handleOnClickChat = () => {
     setSeeMoreChat(!seeMoreChat);
@@ -96,6 +104,28 @@ export const Works2 = () => {
         <Cognizant
           setSeeMoreCognizant={setSeeMoreCognizant}
           seeMoreCognizant={seeMoreCognizant}
+        />
+      )}
+      {/* ----------------------------------- VIRTUAL360 CHALLENGE CARD ------------------------------------------ */}
+
+      {!seeMoreVirtual360 && (
+        <Apps
+          title="VIRTUAL 360 TOUR"
+          // subtitle="E-COMMERCE"
+          description="create a 360 photos tour"
+          link="https://virtual360-tour.vercel.app/"
+          repo="https://github.com/Facupelli/Virtual360Tour"
+          handleOnClick={handleOnClickVirtual}
+          image={homeVirtual}
+        />
+      )}
+
+      {/* ----------------------------------- VIRTUAL360 CHALLENGE DESPLIEGUE ------------------------------------------ */}
+
+      {seeMoreVirtual360 && (
+        <Virtual360
+          setSeeMoreVirtual360={setSeeMoreVirtual360}
+          seeMoreVirtual360={seeMoreVirtual360}
         />
       )}
 
